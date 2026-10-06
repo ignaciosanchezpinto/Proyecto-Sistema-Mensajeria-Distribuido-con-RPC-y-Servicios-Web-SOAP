@@ -7,17 +7,18 @@ Las instrucciones detalladas para la compilación, despliegue y ejecución del s
 ## 1. Requisitos Previos
 
 Antes de que la ejecución sea iniciada, los siguientes componentes deben estar instalados en el entorno (el contenedor Docker `practica_u22` es recomendado):
-*   **GCC y Make**: Para que el código en C sea compilado.
-*   **rpcbind y rpcgen**: Para que el middleware RPC sea generado y ejecutado.
-*   **Python 3**: Para que el cliente y el servicio SOAP sean lanzados.
-*   **Zeep (Python)**: La librería SOAP requerida por el servicio web.
+* **GCC y Make**: Para que el código en C sea compilado.
+* **rpcbind y rpcgen**: Para que el middleware RPC sea generado y ejecutado.
+* **Python 3**: Para que el cliente y el servicio SOAP sean lanzados.
+* **Zeep (Python)**: La librería SOAP requerida por el servicio web.
 
 ## 2. Compilación del Sistema
 
-Un archivo `Makefile` ha sido provisto para que la construcción del proyecto sea automatizada mediante el uso de archivos objeto (`.o`). 
+Un archivo `Makefile` ha sido provisto para que la construcción del proyecto sea automatizada mediante el uso de archivos objeto (`.o`).
 
 Para que los ejecutables sean generados, el siguiente comando debe ser introducido en la raíz del proyecto:
 
+```bash
 make
 Una vez que el comando es ejecutado, los binarios server y log_server, junto con las cabeceras RPC (log.h, etc.), serán creados.
 
