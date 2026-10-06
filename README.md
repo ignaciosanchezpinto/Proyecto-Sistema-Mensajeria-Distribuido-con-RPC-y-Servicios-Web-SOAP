@@ -17,7 +17,7 @@ Antes de que la ejecución sea iniciada, los siguientes componentes deben estar 
 Un archivo `Makefile` ha sido provisto para que la construcción del proyecto sea automatizada mediante el uso de archivos objeto (`.o`). 
 
 Para que los ejecutables sean generados, el siguiente comando debe ser introducido en la raíz del proyecto:
-```bash
+
 make
 Una vez que el comando es ejecutado, los binarios server y log_server, junto con las cabeceras RPC (log.h, etc.), serán creados.
 
